@@ -36,7 +36,7 @@ public class activity_hoadon extends Activity {
         Double DG1 = packageFromCaller.getDouble("DG1");
         Double SL2 = packageFromCaller.getDouble("SL1");
         Double DG2 = packageFromCaller.getDouble("DG1");
-        Double Tien = SL2 * DG2;
+        Double Tien = SL1 * DG2;
         TT.setText("Thành tiền:" + Tien);
         BT1.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -91,6 +91,7 @@
             android:layout_toRightOf="@+id/TxtDongia"
             android:inputType="numberDecimal"
             android:paddingRight="20dp"
+            android:textAlignment="textEnd"
             android:singleLine="false"
             android:textAppearance="@style/TextAppearance.AppCompat" />
         <Button
