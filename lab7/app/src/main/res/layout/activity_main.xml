@@ -6,13 +6,87 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <RelativeLayout
+        android:layout_width=" match_parent "
+        android:layout_height=" match_parent "
+        android:background="#99FFCC"
+        tools:ignore="MissingConstraints">
     <TextView
+        android:id="@+id/TxtCauhoi"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textSize="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+    <RadioGroup
+        android:id="@+id/RadioGroupTraloi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:layout_below="@+id/TxtCauhoi"
+        android:padding="10dp"
+        >
+        <RadioButton
+            android:id="@+id/RdbA"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="A. "
+            android:textSize="25dp"
+            android:padding="10dp"
+            />
+        <RadioButton
+            android:id="@+id/RdbB"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="B. "
+            android:textSize="25dp"
+            android:padding="10dp"
+
+            />
+        <RadioButton
+            android:id="@+id/RdbC"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="C. "
+            android:textSize="25dp"
+            android:padding="10dp"
+
+            />
+        <RadioButton
+            android:id="@+id/RdbD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="D. "
+            android:textSize="25dp"
+            android:padding="10dp"
+            />
+    </RadioGroup>
+    <Button
+        android:id="@+id/BtnTraloi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_below="@+id/RadioGroupTraloi"
+        android:layout_centerHorizontal="true"
+        android:text="Trả lời"
+        android:textSize="25dp"
+        />
+        <TextView
+            android:id="@+id/TxtKetqua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_below="@+id/BtnTraloi"
+            android:layout_marginTop="30dp"
+            android:textAlignment="center"
+            android:gravity="center_horizontal" />
+    </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
